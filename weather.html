@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            
+            <input id = "inp" type="text" class="input" placeholder="enter city name" spellcheck="false">
+            <button class="button" onclick="myfun()"><i class="fa-solid fa-magnifying-glass"></i></button>
+           
+        </div>
+        <h2 id="city">Gorakhpur</h2>
+         <img id="image"src="./best.png"alt="hiii" style="width: 200px;">
+        <h1 id="deeg"style="font-size: 40px;margin-top: -29px;">33</h1>
+         <h1 id="type"style="font-size:22px;" >cloud</h1>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

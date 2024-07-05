@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.card {
+    width: 90%; /* Make it responsive */
+    max-width: 400px; /* Limit maximum width */
+    background: linear-gradient(#00feba, #5b548a);
+    border-radius: 8px;
+    padding-top: 25px;
+    text-align: center;
+    color: #fff; /* Text color to stand out on gradient */
+}
+
+.search {
+    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+    width: 90%; /* Make it responsive */
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input {
+    width: calc(100% - 70px); /* Adjust width to account for button */
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.button {
+    width: 60px;
+    border-radius: 20px;
+    background: #ff6347; /* Button color */
+    color: #fff; /* Text color on button */
+    border: none;
+    cursor: pointer;
+}
+
+.input:hover, .button:hover {
+    border: 2px solid #222;
+}
+
+#city {
+    margin-top: 20px; /* Reduced margin for smaller screens */
+    font-size: 28px; /* Adjust font size for responsiveness */
+}
+
+#deeg {
+    font-size: 40px;
+    margin: 10px 0; /* Adjust margin */
+}
+
+#type {
+    font-size: 22px;
+}
+
+#image {
+    max-width: 80%; /* Ensure image is responsive */
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .search {
+        flex-direction: column; /* Stack input and button */
+    }
+
+    .input {
+        width: 100%;
+        margin-bottom: 10px; /* Add space below input */
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
